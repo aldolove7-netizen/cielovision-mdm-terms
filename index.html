@@ -26,6 +26,181 @@
       color: var(--text);
       line-height:1.45;
 
-      /* Background watermark image */
+      /* Background watermark */
       background:
-        url("cielovision-logo.jpg") c
+        url("cielovision-logo.jpg") center 140px / 520px no-repeat,
+        var(--bg);
+    }
+
+    .wrap{
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 18px 80px;
+    }
+
+    .header{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      margin-bottom: 28px;
+    }
+
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:12px;
+      background:#ffffff;
+      border:1px solid var(--border);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+      box-shadow:0 4px 12px rgba(0,0,0,.06);
+    }
+
+    .logo img{
+      width:100%;
+      height:100%;
+      object-fit:contain;
+    }
+
+    .header h1{
+      margin:0;
+      font-size:22px;
+      font-weight:600;
+    }
+
+    .header p{
+      margin:4px 0 0;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:28px;
+    }
+
+    h2{
+      margin-top:0;
+      font-size:20px;
+    }
+
+    h3{
+      margin-top:28px;
+      font-size:16px;
+    }
+
+    ul{
+      margin:12px 0 0 18px;
+      padding:0;
+    }
+
+    li{
+      margin:8px 0;
+      color:var(--muted);
+    }
+
+    .notice{
+      background:#f3f4f6;
+      border-left:4px solid var(--accent);
+      padding:14px 16px;
+      border-radius:8px;
+      margin:20px 0;
+      font-size:14px;
+    }
+
+    .footer{
+      margin-top:32px;
+      padding-top:16px;
+      border-top:1px solid var(--border);
+      font-size:12px;
+      color:var(--muted);
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    a{ color:var(--accent); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="header">
+      <div class="logo">
+        <!-- Top-left logo -->
+        <img src="CieloVision-small-logo.jpg" alt="CieloVision Logo">
+      </div>
+      <div>
+        <h1>CieloVision</h1>
+        <p>Device & Account Terms of Use</p>
+      </div>
+    </div>
+
+    <div class="card">
+
+      <h2>Terms for Accessing CieloVision Systems and Data</h2>
+
+      <p>
+        This page is presented during device enrollment and account sign-in for users accessing
+        CieloVision-managed systems, including Microsoft 365 and internal applications.
+      </p>
+
+      <div class="notice">
+        <strong>Company-Owned Devices Only.</strong>
+        Personal devices are not permitted to access CieloVision systems.
+      </div>
+
+      <h3>1. Device Ownership & Enrollment</h3>
+      <ul>
+        <li>Only <strong>CieloVision-owned and issued equipment</strong> may be used to access company systems.</li>
+        <li>All devices must be enrolled in CieloVision’s Mobile Device Management (MDM) platform.</li>
+        <li>Unmanaged or personal devices will be blocked automatically.</li>
+      </ul>
+
+      <h3>2. Security Controls</h3>
+      <ul>
+        <li>Security policies such as disk encryption, password enforcement, screen lock, and OS compliance are mandatory.</li>
+        <li>Devices not meeting security requirements may lose access until remediated.</li>
+      </ul>
+
+      <h3>3. Data Protection & Monitoring</h3>
+      <ul>
+        <li>Company data stored or accessed on devices remains the property of CieloVision.</li>
+        <li>Access, authentication, and device posture may be logged for security and compliance purposes.</li>
+        <li>If a device is lost, stolen, compromised, or decommissioned, company data may be removed.</li>
+      </ul>
+
+      <h3>4. User Responsibilities</h3>
+      <ul>
+        <li>Users must safeguard credentials and comply with all security procedures.</li>
+        <li>Lost or stolen devices must be reported immediately.</li>
+        <li>Unauthorized use of systems or devices may result in access revocation.</li>
+      </ul>
+
+      <h3>5. Support</h3>
+      <p>
+        For assistance, contact
+        <a href="mailto:support@cielovision.com">support@cielovision.com</a>.
+      </p>
+
+      <div class="footer">
+        <div>Effective date: December 15, 2025</div>
+        <div>© <span id="year"></span> CieloVision. All rights reserved.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
