@@ -4,183 +4,196 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CieloVision | Device & Account Terms of Use</title>
-  <meta name="description" content="CieloVision Device & Account Terms of Use for accessing company systems and data." />
+  <meta name="description" content="CieloVision Device & Account Terms of Use for company-owned equipment." />
+
   <style>
     :root{
-      --bg:#0b1220;
-      --card:#0f1a2e;
-      --text:#eaf0ff;
-      --muted:#b8c4e6;
-      --border:rgba(255,255,255,.12);
-      --shadow: 0 10px 28px rgba(0,0,0,.35);
+      --bg:#f5f6f4;
+      --card:#ffffff;
+      --text:#1f2937;
+      --muted:#4b5563;
+      --border:#e5e7eb;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+      --accent:#6b21a8;
       --radius:16px;
-      --accent:#7aa2ff;
     }
+
     *{ box-sizing:border-box; }
+
     body{
       margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-      background:
-        radial-gradient(1100px 700px at 18% 10%, rgba(122,162,255,.18), transparent 60%),
-        radial-gradient(900px 600px at 85% 20%, rgba(255,122,200,.10), transparent 60%),
-        radial-gradient(900px 700px at 70% 85%, rgba(122,255,210,.08), transparent 60%),
-        var(--bg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
       color: var(--text);
-      line-height: 1.45;
-    }
-    .wrap{ max-width: 980px; margin: 0 auto; padding: 28px 18px 60px; }
-    .top{
-      display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;
-      margin-bottom: 16px;
-    }
-    .brand{ display:flex; align-items:center; gap:14px; min-width: 280px; }
-    .logo{
-      width: 56px; height: 56px; border-radius: 14px;
-      background: rgba(255,255,255,.06);
-      border: 1px solid var(--border);
-      display:flex; align-items:center; justify-content:center; overflow:hidden;
-      box-shadow: 0 8px 18px rgba(0,0,0,.25);
-    }
-    .logo img{ width:100%; height:100%; object-fit:contain; }
-    .brand h1{ margin:0; font-size:18px; letter-spacing:.2px; }
-    .brand p{ margin:4px 0 0; color: var(--muted); font-size: 13px; }
+      line-height:1.45;
 
-    .meta{ display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
-    .pill{
-      border: 1px solid var(--border);
-      background: rgba(255,255,255,.04);
-      padding: 8px 10px; border-radius: 999px;
-      font-size: 12px; color: var(--muted);
+      /* Logo watermark background */
+      background:
+        url("cielovision-logo.jpg") center 120px / 520px no-repeat,
+        var(--bg);
+    }
+
+    .wrap{
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 18px 80px;
+    }
+
+    .header{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      margin-bottom: 28px;
+    }
+
+    .logo{
+      width:64px;
+      height:64px;
+      border-radius:14px;
+      background:#ffffff;
+      border:1px solid var(--border);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+    }
+
+    .logo img{
+      width:100%;
+      height:100%;
+      object-fit:contain;
+    }
+
+    .header h1{
+      margin:0;
+      font-size:22px;
+      font-weight:600;
+    }
+
+    .header p{
+      margin:4px 0 0;
+      color:var(--muted);
+      font-size:14px;
     }
 
     .card{
-      background: rgba(15,26,46,.82);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      overflow:hidden;
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:28px;
     }
-    header{ padding: 18px 18px 0; }
-    header h2{ margin:0; font-size:22px; letter-spacing:.2px; }
-    header p{ margin: 10px 0 0; color: var(--muted); font-size: 14px; max-width: 85ch; }
 
-    .content{ padding: 16px 18px 18px; }
-    .section{
-      margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--border);
+    h2{
+      margin-top:0;
+      font-size:20px;
     }
-    .section h3{ margin: 0 0 8px; font-size: 16px; }
-    ul{ margin: 10px 0 0 18px; padding:0; }
-    li{ margin: 8px 0; color: var(--muted); }
-    li strong{ color: var(--text); }
+
+    h3{
+      margin-top:28px;
+      font-size:16px;
+    }
+
+    ul{
+      margin:12px 0 0 18px;
+      padding:0;
+    }
+
+    li{
+      margin:8px 0;
+      color:var(--muted);
+    }
 
     .notice{
-      margin-top: 18px;
-      padding: 14px;
-      border-radius: 12px;
-      border: 1px solid rgba(122,162,255,.35);
-      background: rgba(122,162,255,.10);
-      color: var(--text);
+      background:#f3f4f6;
+      border-left:4px solid var(--accent);
+      padding:14px 16px;
+      border-radius:8px;
+      margin:20px 0;
+      font-size:14px;
     }
+
     .footer{
-      margin-top: 14px;
-      display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between;
-      color: var(--muted); font-size: 12px;
-      border-top: 1px solid var(--border);
-      padding-top: 14px;
+      margin-top:32px;
+      padding-top:16px;
+      border-top:1px solid var(--border);
+      font-size:12px;
+      color:var(--muted);
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:10px;
     }
-    a{ color: var(--accent); text-decoration:none; }
+
+    a{ color:var(--accent); text-decoration:none; }
     a:hover{ text-decoration:underline; }
-    .small{ font-size: 12px; color: var(--muted); }
-    code{
-      background: rgba(255,255,255,.06);
-      border: 1px solid var(--border);
-      padding: 2px 6px;
-      border-radius: 8px;
-      color: var(--text);
-    }
   </style>
 </head>
 
 <body>
   <div class="wrap">
-    <div class="top">
-      <div class="brand">
-        <div class="logo">
-          <!-- Put your logo file in the same folder as index.html -->
-          <img src="cielovision-logo.jpg" alt="CieloVision Logo">
-        </div>
-        <div>
-          <h1>CieloVision</h1>
-          <p>Device & Account Terms of Use</p>
-        </div>
-      </div>
 
-      <div class="meta">
-        <div class="pill">Effective: <span id="effectiveDate">December 15, 2025</span></div>
-        <div class="pill">Applies to: Company & BYOD</div>
-        <div class="pill">Support: <a href="mailto:support@cielovision.com">support@cielovision.com</a></div>
+    <div class="header">
+      <div class="logo">
+        <img src="cielovision-logo.jpg" alt="CieloVision Logo">
+      </div>
+      <div>
+        <h1>CieloVision</h1>
+        <p>Device & Account Terms of Use</p>
       </div>
     </div>
 
     <div class="card">
-      <header>
-        <h2>Terms for Accessing CieloVision Systems and Data</h2>
-        <p>
-          This page is displayed during device enrollment and account sign-in for users accessing CieloVision-managed services
-          (for example, Microsoft 365, corporate applications, and protected company data).
-          By continuing, you acknowledge these terms.
-        </p>
-      </header>
 
-      <div class="content">
-        <div class="notice">
-          <strong>Important:</strong> If you do not agree, stop the enrollment/sign-in process and contact CieloVision IT.
-          Continued use indicates acceptance.
-        </div>
+      <h2>Terms for Accessing CieloVision Systems and Data</h2>
 
-        <div class="section">
-          <h3>1) Management and Security Controls</h3>
-          <ul>
-            <li><strong>Device management:</strong> Devices may be enrolled in Mobile Device Management (MDM) to protect company data.</li>
-            <li><strong>Security policies:</strong> We may enforce policies such as encryption, password/PIN requirements, screen lock, and OS minimum versions.</li>
-            <li><strong>Compliance:</strong> Non-compliant devices may be blocked from accessing company resources until remediated.</li>
-          </ul>
-        </div>
+      <p>
+        This page is presented during device enrollment and account sign-in for users accessing
+        CieloVision-managed systems, including Microsoft 365 and internal applications.
+      </p>
 
-        <div class="section">
-          <h3>2) Company Data Protection</h3>
-          <ul>
-            <li><strong>Work data separation:</strong> Company data may be protected using enterprise controls and may be removed without affecting personal data when feasible.</li>
-            <li><strong>Remote removal:</strong> If a device is lost/stolen, compromised, or access is revoked, company data may be removed from the device (selective wipe where possible).</li>
-            <li><strong>Logging and monitoring:</strong> Access events may be logged for security, compliance, and troubleshooting.</li>
-          </ul>
-        </div>
-
-        <div class="section">
-          <h3>3) User Responsibilities</h3>
-          <ul>
-            <li><strong>Credential protection:</strong> Do not share passwords or MFA methods. Report suspicious prompts immediately.</li>
-            <li><strong>Acceptable use:</strong> Use company systems for authorized business purposes and comply with internal security procedures.</li>
-            <li><strong>Incident reporting:</strong> Report lost/stolen devices and suspected compromise as soon as possible.</li>
-          </ul>
-        </div>
-
-        <div class="section">
-          <h3>4) Support and Contact</h3>
-          <p class="small">
-            For assistance with sign-in, enrollment, or policy questions, contact CieloVision IT:
-            <a href="mailto:support@cielovision.com">support@cielovision.com</a>.
-          </p>
-          <p class="small">
-            Reference: <code>Device & Account Terms of Use</code>
-          </p>
-        </div>
-
-        <div class="footer">
-          <div>© <span id="year"></span> CieloVision. All rights reserved.</div>
-          <div class="small">This is an informational page for enrollment/sign-in display. For interactive “Accept/Decline,” use Entra “Terms of use” PDFs.</div>
-        </div>
+      <div class="notice">
+        <strong>Company-Owned Devices Only.</strong>
+        Personal or bring-your-own devices (BYOD) are not permitted to access CieloVision systems.
       </div>
+
+      <h3>1. Device Ownership & Enrollment</h3>
+      <ul>
+        <li>Only <strong>CieloVision-owned and issued equipment</strong> may be used to access company systems.</li>
+        <li>All devices must be enrolled in CieloVision’s Mobile Device Management (MDM) platform.</li>
+        <li>Unmanaged or personal devices will be blocked automatically.</li>
+      </ul>
+
+      <h3>2. Security Controls</h3>
+      <ul>
+        <li>Security policies such as disk encryption, password enforcement, screen lock, and OS compliance are mandatory.</li>
+        <li>Devices not meeting security requirements may lose access until remediated.</li>
+      </ul>
+
+      <h3>3. Data Protection & Monitoring</h3>
+      <ul>
+        <li>Company data stored or accessed on devices remains the property of CieloVision.</li>
+        <li>Access, authentication, and device posture may be logged for security and compliance purposes.</li>
+        <li>If a device is lost, stolen, compromised, or decommissioned, company data may be removed.</li>
+      </ul>
+
+      <h3>4. User Responsibilities</h3>
+      <ul>
+        <li>Users must safeguard credentials and comply with all security procedures.</li>
+        <li>Lost or stolen devices must be reported immediately.</li>
+        <li>Unauthorized use of systems or devices may result in access revocation.</li>
+      </ul>
+
+      <h3>5. Support</h3>
+      <p>
+        For questions or assistance, contact CieloVision IT at
+        <a href="mailto:support@cielovision.com">support@cielovision.com</a>.
+      </p>
+
+      <div class="footer">
+        <div>Effective date: December 15, 2025</div>
+        <div>© <span id="year"></span> CieloVision. All rights reserved.</div>
+      </div>
+
     </div>
   </div>
 
